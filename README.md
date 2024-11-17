@@ -3,7 +3,7 @@
 <!-- PROJECT TITLE -->
 <br />
 <div align="center">
-  <h2 align="center">📺 AniMizu</h2>
+  <h2 align="center"><img src="images/Animizu.png" alt="AniMizu"></h2>
 
   <p align="center">
     Your go-to anime database! 🌸
