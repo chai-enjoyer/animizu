@@ -6,6 +6,10 @@ body{
     font-family: 'Roboto', 'sans-serif';
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 .navbar{
     width: 100%;
     height: 50px;
@@ -102,6 +106,45 @@ body{
     padding-top: 60px;
 }
 
+.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 5px;
+    background: transparent;
+    border-radius: 30px;
+    align-items: center;
+    position: relative; /* Important for absolute positioning of the expanding input */
+}
+
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.4s ease; /* Smooth transition for width expansion */
+    background: transparent;
+    position: absolute; /* Allows it to expand to the right */
+    left: 35px; /* Push the input field to the right of the search icon */
+    padding: 5px 10px; /* Add padding for better usability */
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+.box:hover input {
+    width: 200px; /* Expand the width of the input box to the right */
+    background: black; /* Optional: Add a background color */
+    color: white;
+    border: 1px solid white; /* Optional: Add a border for visibility */
+}
+
+
+.box a .fas{
+    color: #1daf;
+    font-size: 18px;   
+}
+
 .left-menu-icon{
     
     color:white;
@@ -119,7 +162,11 @@ body{
     margin-left: 50px;
 }
 
-.featured-content{
-    height: 50vh;
+.featured-content {
+    height: 70vh;
     background-color: violet;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../images/bg.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
