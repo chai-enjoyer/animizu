@@ -22,7 +22,7 @@ body{
 }
 
 .logo-container{
-    flex: 2;
+    flex: 1;
 }
 
 .logo{
@@ -93,7 +93,33 @@ body{
 .sidebar{
     width: 50px;
     height: 100%;
-    background: rgb(0, 0, 0);
+    background: black; 
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon{
+    
+    color:white;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.container{
+    background-color: #151515;
+    height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 50vh;
+    background-color: violet;
 }
