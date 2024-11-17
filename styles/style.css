@@ -151,6 +151,8 @@ a{
     background-color: #151515;
     height: calc(100vh - 50px);
     color: white;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .content-container{
@@ -175,4 +177,41 @@ a{
 .anime-container{
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0), #151515), rgb(62, 2, 32);
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.anime-type {
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid;
+    width: 200px;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.anime-type:hover {
+    transform: scale(1.05);
+}
+
+.anime-type img {
+    width: 200px;
+    height: 250px;
+}
+
+.anime-type h3 {
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+.anime-type p {
+    padding: 10px;
+    color: #2c3e50;
 }
