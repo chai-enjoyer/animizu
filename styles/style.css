@@ -103,7 +103,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 .box {
@@ -114,7 +114,7 @@ a{
     background: transparent;
     border-radius: 30px;
     align-items: center;
-    position: relative; /* Important for absolute positioning of the expanding input */
+    position: relative; 
 }
 
 .box input {
@@ -122,27 +122,22 @@ a{
     outline: none;
     border: none;
     font-weight: 500;
-    transition: 0.4s ease; /* Smooth transition for width expansion */
+    transition: 0.4s ease;
     background: transparent;
-    position: absolute; /* Allows it to expand to the right */
-    left: 35px; /* Push the input field to the right of the search icon */
-    padding: 5px 10px; /* Add padding for better usability */
+    position: absolute; 
+    left: 35px;
+    top: -13px;
+    padding: 5px 10px; 
     color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
 }
 
 .box:hover input {
-    width: 200px; /* Expand the width of the input box to the right */
-    background: black; /* Optional: Add a background color */
+    width: 200px; 
+    background: black;
     color: white;
-    border: 1px solid white; /* Optional: Add a border for visibility */
-}
-
-
-.box a .fas{
-    color: #1daf;
-    font-size: 18px;   
+    border: 1px solid white;
 }
 
 .left-menu-icon{
@@ -164,9 +159,20 @@ a{
 
 .featured-content {
     height: 70vh;
-    background-color: violet;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../images/bg.jpg');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.text-container{
+    height: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #151515), #151515;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.anime-container{
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #151515), rgb(62, 2, 32);
 }
