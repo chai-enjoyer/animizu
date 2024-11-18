@@ -34,6 +34,12 @@ a{
     color:deeppink;
 }
 
+.logo img{
+    height: auto;
+    width: 200px;
+    padding: 5px;
+}
+
 .menu-container{
     flex: 7;
 }
@@ -166,6 +172,8 @@ a{
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
 .text-container{
@@ -231,41 +239,98 @@ a.active{
 
 .container.active {
     background-color: white;
-  }
+}
+
+.featured-content.active {
+    height: 70vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url('../images/Slide.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.text-container img.active{
+    height: 50px;
+    width: 250px;
+    padding-top: 50px;
+}
+
+.anime-container.active{
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #151515), rgb(71, 71, 71);
+}
   
-  .menu-list-item.active-mode {
+.menu-list-item.active-mode {
     color: black;
 }
 
-  .movie-list-title.active {
+.movie-list-title.active {
     color: black;
-  }
+}
   
-  .navbar-container.active {
+.navbar-container.active {
+    background-color: #717171;
+  
+    color: black;
+}
+  
+.sidebar.active{
+    background-color: #717171;
+    
+}
+  
+.left-menu-icon.active{
+    color: black;
+}
+  
+.toggle.active{
+    background-color: black;
+}
+  
+.toggle-ball.active{
     background-color: white;
+    transform: translateX(-20px);
+}
+
+/* Smooth transitions for theme changes */
+.container,
+.movie-list-title,
+a,
+.navbar-container, 
+.anime-container, 
+.featured-content, 
+.sidebar,
+.left-menu-icon,
+.toggle-ball,
+.text-container img,
+.logo-container img {
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Specific transition for images */
+.text-container img,
+.logo-container img {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.text-container img.hidden,
+.logo-container img.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.text-container img.visible,
+.logo-container img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
   
-    color: black;
-  }
-  
-  .sidebar.active{
-      background-color: white;
-  }
-  
-  .left-menu-icon.active{
-      color: black;
-  }
-  
-  .toggle.active{
-      background-color: black;
-  }
-  
-  .toggle-ball.active{
-      background-color: white;
-      transform: translateX(-20px);
-  }
-  
-  @media only screen and (max-width: 940px){
-      .menu-container{
-          display: none;
-      }
-  }
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}
