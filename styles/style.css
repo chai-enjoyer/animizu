@@ -174,6 +174,12 @@ a{
     padding-top: 50px;
 }
 
+.text-container img{
+    height: 50px;
+    width: 250px;
+    padding-top: 50px;
+}
+
 .anime-container{
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0), #151515), rgb(62, 2, 32);
