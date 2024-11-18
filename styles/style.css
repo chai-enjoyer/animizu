@@ -169,7 +169,6 @@ a{
 }
 
 .featured-content {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
