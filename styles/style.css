@@ -69,22 +69,23 @@ a{
     object-fit: cover;
 }
 
-.toggle{
+
+.toggle {
     width: 40px;
     height: 20px;
-    background-color:white;
+    background-color: white;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
 }
-
-.toggle-icon{
-    color: goldenrod
+  
+.toggle-icon {
+    color: goldenrod;
 }
-
-.toggle-ball{
+  
+.toggle-ball {
     width: 18px;
     height: 18px;
     background-color: black;
@@ -92,8 +93,8 @@ a{
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 1s ease all;
 }
-
 .sidebar{
     width: 50px;
     height: 100%;
@@ -222,3 +223,49 @@ a{
     padding: 10px;
     color: #2c3e50;
 }
+
+a.active{
+    color: black;
+    text-decoration: none;
+}
+
+.container.active {
+    background-color: white;
+  }
+  
+  .menu-list-item.active-mode {
+    color: black;
+}
+
+  .movie-list-title.active {
+    color: black;
+  }
+  
+  .navbar-container.active {
+    background-color: white;
+  
+    color: black;
+  }
+  
+  .sidebar.active{
+      background-color: white;
+  }
+  
+  .left-menu-icon.active{
+      color: black;
+  }
+  
+  .toggle.active{
+      background-color: black;
+  }
+  
+  .toggle-ball.active{
+      background-color: white;
+      transform: translateX(-20px);
+  }
+  
+  @media only screen and (max-width: 940px){
+      .menu-container{
+          display: none;
+      }
+  }
