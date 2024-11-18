@@ -180,6 +180,7 @@ a{
 }
 
 .anime-list {
+    padding-top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
