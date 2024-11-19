@@ -380,7 +380,7 @@ a,
 }
   
 
-/* @media only screen and (max-width: 940px) {
+@media only screen and (max-width: 940px) {
     .menu-container {
         display: none;
     }
@@ -407,7 +407,7 @@ a,
     }
 }
 
-/* For mobile phones 
+
 @media only screen and (max-width: 600px) {
     .navbar-container {
         flex-wrap: wrap;
@@ -439,7 +439,7 @@ a,
     }
 }
 
-/* Very small screens (portrait mobile) 
+
 @media only screen and (max-width: 400px) {
     .anime-type {
         width: 100px;
@@ -460,6 +460,6 @@ a,
     .featured-content {
         height: 40vh;
     }
-} */
+}
 
 

@@ -39,15 +39,15 @@ AniMizu is a web-based anime database designed to offer a clean and intuitive ex
 ## Screenshots
 
 <p align="center">
-  <img src="images/example.png" alt="Screenshot" width="80%" style="border-radius: 10px;">
+  <img src="images/scrmain.png" alt="Screenshot" width="80%" style="border-radius: 10px;">
   <br />
   <i>Main interface screenshot</i>
 </p>
 
 <p align="center">
-  <img src="images/search_example.png" alt="Search Screenshot" width="80%" style="border-radius: 10px;">
+  <img src="images/scrtitle.png" alt="Search Screenshot" width="80%" style="border-radius: 10px;">
   <br />
-  <i>Anime search functionality</i>
+  <i>Title page</i>
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
