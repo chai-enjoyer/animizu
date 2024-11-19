@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,21 +21,24 @@
             <div class="menu-container">
                 <ul class="menu-list">
                     <li class="menu-list-item active"><a href="index.html">Home</a></li>
-                    <li class="menu-list-item">Contact Us</li>                </ul>
+                    <li class="menu-list-item">Contact Us</li>
+                </ul>
             </div>
             <div class="profile-container">
                 <img class="profile-picture" src="images/pfp.jpg" alt="">
                 <div class="profile-text-container">
                     <span class="profile-text">Profile</span>
                     <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="toggle">
-            <i class="fa-solid fa-moon toggle-icon"></i>
-            <i class="fa-solid fa-sun toggle-icon"></i>
-            <div class="toggle-ball"></div>
-        </div>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="sidebar">
         <div class="box">
             <input type="search" id="search" placeholder="Search...">
@@ -45,45 +49,70 @@
         <i class="left-menu-icon fa-solid fa-house"></i>
     </div>
 
-
     <div class="container">
         <div class="content-container">
             <div class="featured-content">
+                <div class="about-us">
+                    <img src="images/About_us1.png" alt="About Us">
+                    <p>
+                        AniMizu is your ultimate platform for discovering and exploring anime.
+                        Dive into a curated selection of series, stay updated, and connect with fellow fans.
+                    </p>
+                </div>
             </div>
             <div class="text-container">
                 <img src="images/animes.png" alt="animes">
             </div>
             <div class="anime-container">
                 <div class="anime-list">
-                    <div class="anime-type" onclick="window.location.href='pages/bleach.html'">
-                        <img src="images/Bleach/tybw_cover.jpg" alt="Аниме 1">
+                    <!-- Link for Bleach -->
+                    <a href="pages/bleach.html" class="anime-type">
+                        <img src="images/Bleach/tybw_cover.jpg" alt="Bleach: Thousand Year Blood War">
                         <h3>Bleach: Thousand Year Blood War</h3>
-                    </div>
-                    <div class="anime-type">
-                        <img src="images/BlueBox/bluebox_cover.jpg" alt="Аниме 2">
+                    </a>
+                    
+                    <!-- Link for BlueBox -->
+                    <a href="bluebox.html" class="anime-type">
+                        <img src="images/BlueBox/bluebox_cover.jpg" alt="BlueBox">
                         <h3>BlueBox</h3>
-                    </div>
-                    <div class="anime-type">
-                        <img src="images/Dandadan/dandadan_cover.jpg" alt="Аниме 3">
+                    </a>
+
+                    <!-- Link for Dandadan -->
+                    <a href="dandadan.html" class="anime-type">
+                        <img src="images/Dandadan/dandadan_cover.jpg" alt="Dandadan">
                         <h3>Dandadan</h3>
-                    </div>
-                    <div class="anime-type">
-                        <img src="images/Erased/erased_cover.jpg" alt="Аниме 4">
+                    </a>
+
+                    <!-- Link for Erased -->
+                    <a href="erased.html" class="anime-type">
+                        <img src="images/Erased/erased_cover.jpg" alt="Erased">
                         <h3>Erased</h3>
-                    </div>
-                    <div class="anime-type">
-                        <img src="images/Frieren/frieren_cover.jpg" alt="Аниме 5">
+                    </a>
+
+                    <!-- Link for Frieren -->
+                    <a href="frieren.html" class="anime-type">
+                        <img src="images/Frieren/frieren_cover.jpg" alt="Frieren: Beyond Journey's End">
                         <h3>Frieren: Beyond Journey's End</h3>
-                    </div>
-                    <div class="anime-type">
-                        <img src="images/JujutsuKaisen/jjk_cover.jpg" alt="Аниме 6">
+                    </a>
+
+                    <!-- Link for Jujutsu Kaisen -->
+                    <a href="jujutsukaisen.html" class="anime-type">
+                        <img src="images/JujutsuKaisen/jjk_cover.jpg" alt="Jujutsu Kaisen">
                         <h3>Jujutsu Kaisen</h3>
-                    </div>
-                </div>
+                    </a>
                 </div>
             </div>
         </div>
-        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 AniMizu.  All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Serik <br>Nurtas</a></li>
+                    <li><a href="#">Tursumbekov <br>Batyrkhan</a></li>
+                    <li><a href="#">Zhumabay <br>Omar</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
