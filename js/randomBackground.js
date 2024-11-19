@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
         const randomIndex = Math.floor(Math.random() * backgrounds.length);
 
         const featuredContent = document.querySelector('.featured-content');
-        featuredContent.style.transition = 'background-image 1s ease-in-out';
+        featuredContent.style.transition = 'background 1s ease-in-out';
         featuredContent.style.background = `linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515), url(${backgrounds[randomIndex]})`;
     }
 

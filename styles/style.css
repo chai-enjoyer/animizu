@@ -373,6 +373,10 @@ a,
     text-decoration: underline;
 }
 
+.footer.active{
+    background-color: #717171;
+    color: black;
+}
   
 
 @media only screen and (max-width: 940px) {
