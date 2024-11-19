@@ -1,6 +1,6 @@
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
-  ".container,.movie-list-title, a,.navbar-container, .anime-container, .featured-content, .sidebar,.left-menu-icon, .toggle"
+  ".container, .anime-list, .anime-list, a,.navbar-container, .anime-container, .featured-content, .sidebar,.left-menu-icon, .toggle"
 );
 
 const textContainerImg = document.querySelector(".text-container img");
@@ -11,13 +11,13 @@ function applyTheme(theme) {
   if (theme === "dark") {
     items.forEach((item) => item.classList.add("active"));
     ball.classList.add("active");
-    textContainerImg.src = "images/Animes2.png"; // Switch to dark-mode image
-    logoImg.src = "images/Animizu2.png"; // Switch to dark-mode logo
+    textContainerImg.src = "../images/Animes2.png"; // Switch to dark-mode image
+    logoImg.src = "../images/Animizu2.png"; // Switch to dark-mode logo
   } else {
     items.forEach((item) => item.classList.remove("active"));
     ball.classList.remove("active");
-    textContainerImg.src = "images/animes.png"; // Switch to light-mode image
-    logoImg.src = "images/Animizu.png"; // Switch to light-mode logo
+    textContainerImg.src = "../images/animes.png"; // Switch to light-mode image
+    logoImg.src = "../images/Animizu.png"; // Switch to light-mode logo
   }
 }
 

@@ -257,16 +257,16 @@ a.active{
     padding-top: 50px;
 }
 
+.anime-type.active{
+    border: 1px maroon;
+}
+
 .anime-container.active{
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0), #151515), rgb(71, 71, 71);
 }
   
 .menu-list-item.active-mode {
-    color: black;
-}
-
-.movie-list-title.active {
     color: black;
 }
   
@@ -296,8 +296,9 @@ a.active{
 
 /* Smooth transitions for theme changes */
 .container,
-.movie-list-title,
 a,
+.anime-list,
+.anime-type
 .navbar-container, 
 .anime-container, 
 .featured-content, 
