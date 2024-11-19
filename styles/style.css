@@ -164,7 +164,7 @@ a{
 }
 
 .content-container{
-    overflow: auto;
+    /* overflow: auto; */
     margin-left: 50px;
 }
 
@@ -374,8 +374,87 @@ a,
 }
 
   
-@media only screen and (max-width: 940px){
-    .menu-container{
+
+@media only screen and (max-width: 940px) {
+    .menu-container {
         display: none;
     }
+
+    .navbar-container {
+        padding: 0 10px;
+    }
+
+    .menu-list-item {
+        font-size: 12px;
+    }
+
+    .sidebar {
+        width: 45px;
+    }
+
+    .profile-picture {
+        width: 28px;
+        height: 28px;
+    }
+
+    .anime-type {
+        width: 150px;
+    }
 }
+
+/* For mobile phones */
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .profile-container {
+        margin-top: 10px;
+    }
+
+    .featured-content {
+        height: 50vh;
+    }
+
+    .anime-type {
+        width: 120px;
+    }
+
+    .anime-type img {
+        height: 150px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* Very small screens (portrait mobile) */
+@media only screen and (max-width: 400px) {
+    .anime-type {
+        width: 100px;
+    }
+
+    .anime-type img {
+        height: 120px;
+    }
+
+    .navbar-container {
+        padding: 0 5px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .featured-content {
+        height: 40vh;
+    }
+}
+
+
