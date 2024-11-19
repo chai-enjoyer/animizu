@@ -1,6 +1,6 @@
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
-  ".container, .anime-list, .anime-list, a,.navbar-container, .anime-container, .featured-content, .sidebar,.left-menu-icon, .toggle"
+  ".container,.movie-list-title, a, .footer,.navbar-container, .anime-container, .featured-content, .sidebar,.left-menu-icon, .toggle"
 );
 
 const textContainerImg = document.querySelector(".text-container img");
